@@ -10,4 +10,5 @@ all: install
 
 install:
 	test -d "$(prefix)/model/scientific_analysis/data/" || mkdir -p "$(prefix)/model/scientific_analysis/data/"
-	cp *.gz "$(prefix)/model/scientific_analysis/data/"
+	cp model/*.gz "$(prefix)/model/scientific_analysis/data/"
+	mv test-data "$(prefix)/agilepy-test-data"
